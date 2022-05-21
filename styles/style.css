@@ -399,6 +399,7 @@ body{
     @media (max-width: 640px) {
         nav#header ul li a.nav-links{
             padding-left: 5px;
+            padding-right: 5px;
         } 
 
         nav#header ul li a.nav-links#home-link, nav#header ul li a.nav-links#home-current {
