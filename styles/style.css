@@ -238,7 +238,6 @@ body{
 /* Contact Us */
     #contact-container{
         background-image: url(../images/child-mail.jpeg);
-        /* background: linear-gradient(167deg, rgba(255, 245, 200), rgba(50, 170, 180)); */
         background-repeat: no-repeat;
         background-size: cover;
         box-shadow: inset 0 0 0 2000px rgba(80,80,80,0.7);  
@@ -362,6 +361,20 @@ body{
             margin-top: 12%;
             padding-bottom: 5.5%;
         }
+
+        #contact-container{
+            margin-top: 20px;
+        }
+
+        .fb-logo{
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        .fb{
+            pointer-events: none;
+        }
     }
 
     @media (max-width: 800px) {
@@ -372,6 +385,15 @@ body{
         #logo-navbar{
             display: none;
         }
+
+        #contact-info-start{
+            margin-top: 50px;
+        }
+
+        #contact-info-end{
+            margin-bottom: 50px;
+        }
+        
     }
 
     @media (max-width: 640px) {
@@ -379,8 +401,15 @@ body{
             padding-left: 5px;
         } 
 
+        nav#header ul li a.nav-links#home-link, nav#header ul li a.nav-links#home-current {
+            padding-left: 0;
+            padding-right: 0;
+            margin-right: 10px;
+        } 
+
         nav#header ul{
             margin-right: 9px;
+            flex: auto;
         }
 
         nav#header{
@@ -390,11 +419,20 @@ body{
         #name{
             padding-top: 40px;
         }
+
+        body{
+            padding-top: 65px; 
+        }
+
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 420px) {
         nav#header ul{
             margin-top: 0px;
             margin-bottom: 0px;
+        } 
+
+        nav#header ul li a.nav-links{
+            font-size: 16px;
         } 
     }

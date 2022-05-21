@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="styles/style.css">
 
   </head>
-    <body class="d-flex flex-column min-vh-100">
+    <body class="d-flex flex-column min-vh-100" id="navbar-padding">
 
 <!-- Nav Bar -->
           <nav id="header" class="fixed-top navbar">
@@ -37,8 +37,8 @@
 
             <ul>
               <li>
-                <a href="https://www.facebook.com/colorfullmindscenter" target="_blank">
-                  <img src="images/fb-logo.png" class="d-none d-xl-block fb-logo">
+                <a href="https://www.facebook.com/colorfullmindscenter" target="_blank" class="fb">
+                  <img src="images/fb-logo.png" class="fb-logo">
                 </a>
             </li>
             </ul>
@@ -73,8 +73,8 @@
                 </div>
 
 <!-- Contact Info -->
-                <div class="col-4 contact-content offset-1 my-auto">
-                    <div class="address details">
+                <div class="col-xxl-3 offset-1 col-md-5 offset-md-1 my-auto" >
+                    <div class="address details" id="contact-info-start">
                         <div class="sub-headers"><i class="fas fa-map-marker-alt me-2"></i>Address</div>
                         <div class="text-one ms-4">2500 Quantum Lakes Drive Suite 203</div>
                         <div class="text-two ms-4">Boynton Beach, Fl 33426</div>
@@ -99,7 +99,7 @@
                             <div class="days ms-4" style="display: block;"> 9:00 AM – 5:00 PM</div>
                             
                             <div class="sub-headers days me-5 ms-4">Saturday - Sunday: </div>
-                            <div class="days ms-4" style="display: block;"> Closed</div>
+                            <div class="days ms-4" style="display: block;" id="contact-info-end"> Closed</div>
                         </div>
                     </div>
                 </div>
