@@ -391,3 +391,10 @@ body{
             padding-top: 40px;
         }
     }
+
+    @media (max-width: 400px) {
+        nav#header ul{
+            margin-top: 0px;
+            margin-bottom: 0px;
+        } 
+    }
