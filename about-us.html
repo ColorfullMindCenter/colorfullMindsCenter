@@ -21,17 +21,17 @@
     <link rel="stylesheet" href="styles/style.css">
 
   </head>
-    <body class="d-flex flex-column min-vh-100">
+    <body class="d-flex flex-column min-vh-100" id>
           <!-- Nav Bar -->
           <nav id="header" class="fixed-top navbar">
             <ul>
                 <li><a href="index.html"><img src="images/logo-alt.png" id="logo-navbar" class="img-responsive"></a></li>
             </ul>
             <ul  class="push-right">
-                <li><a href="index.html" class="nav-links" id="home-current">Home</a></li>
+                <li><a href="index.html" class="nav-links" id="home-link">Home</a></li>
                 <li><a href="services.html" class="nav-links" id="services">Services</a></li> 
                 <li><a href="contact.html" class="nav-links" id="contact">Contact Us</a></li>
-                <li><a href="about-us.html" class="nav-links" id="about-us">About</a></li>
+                <li><a href="about-us.html" class="nav-links" id="about-us-current">About</a></li>
             </ul>
 
             <ul>
@@ -43,55 +43,27 @@
             </ul>
         </nav>
 
-<!-- Home -->
-        <div class="container-fluid" id="home">
-          <div class="row" >
-            <div class="col-md-10 offset-md-1 col-sm-12 offset-1">
-                <h1 id="name">Colorfull Minds Center</h1>
-            </div>
-          </div>
-
-            <div class="row">
-                <div class="col-xl-4 col-md-8 offset-md-1 col-sm-10 col-11 offset-1" id="slogan">
-                    <p>Applied Behavior Analysis Services for Children With Autism and Related Disorders</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xl-4 col-md-8 offset-md-1 offset-1">
-                    <a href="#main-content" id="arrow-bottom">Learn More <i class="fa fa-chevron-circle-down"></i></a>
-                </div>
-            </div>
-
-            <!--Down Arrow-->
-            <div class="row">
-                <div class="col-12">
-                    <a href="#main-content"><i class="fa fa-arrow-circle-down" id="arrow-down"></i></a>
-                </div> 
-            </div>
-        </div>
-
 <!-- Main Section -->
-        <div class="container-fluid" id="main-content">
-            <div class="row">
-              <div class="col-lg-6 col-md-8 col-sm-10 offset-sm-1 offset-md-2 offset-lg-3">
+        <div class="container-fluid" id="about-content">
+            <div class="row" id="about">
+              <div class="col-lg-6 col-md-8 col-sm-10 offset-sm-1 offset-md-2 offset-lg-3 about-text">
 
-                <div class="p-text">The hardships that come with raising an autistic child can be both challenging and rewarding!
-                  Join Colorfull Minds Center on its mission to celebrate your child’s strengths and overcome challenging situations 
-                  with the help of highly qualified BCBA’s (Board Certified Behavior Analyst) and ABA therapists!
-                </div>
+                <h1 id="about-us-headers" style="color: rgb(207,44,44)">About Us</h1>
+                <p class="p-text">
+                  We are approved in providing applied behavior analysis services to children with Autism, ADHD, developmental disabilities. 
+                  Colorfull Minds Center, was founded by two committed individuals with a passion for helping children with special needs reach 
+                  their full potential and improve their quality of life. Our mission is to increase our clients’ social and functional skills 
+                  and reduce problem behaviors by implementing the research-based strategies of Applied Behavior Analysis. 
+                  Colorfull Minds Center is a private agency experienced in delivering the highest quality therapeutic services to children 
+                  and their families.  At CMC we provide applied behavior analysis by highly trained and skilled staff, such as Board Certified 
+                  Behavior Analyst (BCBA), Board Certified Assistant Behavior Analyst (BCaBA), and Registered Behavior Technicians (RBT).
+                </p>
 
-                  <div class="p-text"> 
-                  Our team is passionate about serving and making a lasting impact on your child’s life.
-                  Colorfull Minds Center provides exceptional care and attention to families in the surrounding
-                  ABA Therapy is provided in the comfort of your home, school or community where your child can learn in their natural environment.
-                  </div>
-                  
-                  <div class="p-text"> 
-                  Our Clinicians work with you in delivering the support and tools your child deserves to reach their full potential. ABA therapy 
-                  is effective at improving various skills such as communication, social-emotional, daily living, executive functions, academics, 
-                  and many more! Learning should be colorful and adaptable to your child’s needs.
-                </div>
+                <h1 id="about-us-headers" style="color: #026cce;">Our Goal</h1>
+                <p class="p-text">
+                  Our goal is to serve our clients by tailoring individualized behavioral programs that promote independence and use best 
+                  practices to facilitate reaching their highest potential.
+                </p>
 
               </div>
             </div>
@@ -172,7 +144,6 @@
     
     <!-- Javascript -->
     <script type="text/javascript" src="js/arrow.js"></script>
-    <script type="text/javascript" src="js/slogan-animation.js"></script>
     <script type="text/javascript" src="js/smooth-scroll.js"></script>
 
     <!-- Jquerry -->

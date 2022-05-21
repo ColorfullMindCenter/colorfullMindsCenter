@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    min-height: 100%;
+    width: 100%;
+}
+
+body{
+    /* background: linear-gradient(167deg, rgba(255, 245, 200), rgba(50, 170, 180)); */
+    background-color: white;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+/* Top Nav bar */
+    nav#header {
+        display: flex; 
+        background: rgba(255,255,255,0.9);   
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    #header ul li{
+        display: inline;
+    }
+
+    nav#header ul li a:link,
+    nav#header ul li a:visited
+    {
+        color: rgba(0,0,0, 0.85);
+        padding: 15px 30px;
+        text-decoration: none; 
+    }
+
+    #logo-navbar{
+        height: 50px;
+        position: absolute;
+    }
+
+    .nav-links{
+        font-size: 20px;
+        font-family: 'Montserrat Alternates', sans-serif;
+    }
+
+    .push-right{
+        margin: 0 auto;
+    }
+
+    .fb-logo{
+        height: 30px;
+        position: relative;
+        top: 10px;
+    }
+
+    /* Navbar Current Page */
+        ul li a#home-current{
+            background: url('../images/hand-red.png') left no-repeat;
+            background-size: 30px 30px;
+        }
+
+        ul li a#about-us-current{
+            background: url('../images/hand-orange.png') left no-repeat;
+            background-size: 30px 30px;
+            margin-left: 20px;
+        }
+
+        ul li a#services-current{
+            background: url('../images/hand-blue.png') left no-repeat;
+            background-size: 30px 30px;
+            margin-left: 20px;
+        }
+
+        ul li a#contact-current{
+            background: url('../images/hand-green.png') left no-repeat;
+            background-size: 30px 30px;
+            margin-left: 20px;
+        }
+    /* Navbar Current Page End*/
+
+
+    /* Navbar Hover */
+        ul li a#home-link:hover,#home-current:hover,#about-us:hover,#services:hover,#contact:hover,
+        #home-current:hover,a#about-us-current:hover,a#contact-current:hover,a#services-current:hover
+        {
+            text-decoration: none; 
+            cursor: pointer; 
+            position: relative;
+            bottom: 5px;
+        }
+
+        ul li a#home-link:hover
+        {
+            background: url('../images/underline-red.png') bottom center no-repeat;
+            background-size: 70% 20px;
+        }
+
+        ul li a#about-us:hover
+        {
+            background: url('../images/underline-orange.png') bottom center no-repeat;
+            background-size: 70% 20px;
+        }
+
+        ul li a#contact:hover
+        {
+            background: url('../images/underline-green.png') bottom center no-repeat;
+            background-size: 70% 20px;
+        }
+
+        ul li a#services:hover
+        {
+            background: url('../images/underline-blue.png') bottom center no-repeat;
+            background-size: 70% 20px;
+        }
+    /* Navbar Hover End */
+/* Top Nav bar End*/
+
+/* Home */
+    .p-text{
+        font-family: 'Roboto', sans-serif; 
+        text-align: left;
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 2;
+        padding: 10px 25px;
+    }
+
+    #name{
+        font-family: 'Amaranth', sans-serif;
+        font-size: 5rem;
+        color:#026cce;
+        filter: drop-shadow(1px 1px 0px black);  
+    }
+
+    #slogan{
+        font-family: 'Oxygen', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    #home{
+        height: 100vh;
+        padding-top: 20%;
+        background-image: url(../images/aba-transp.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #main-content{
+        padding-top: 8%;
+        padding-bottom: 5%;
+    }
+
+    #arrow-down{
+        font-size: 400%;
+        color:#026cce;
+        position:fixed;
+        bottom:20px;
+        filter: drop-shadow(1px 1px 1px black);  
+        display: inline-block;
+        width: 100%;
+    }
+
+    #arrow-down:hover {
+        color: black;
+        transform: translateY(4px);
+    }
+    
+    #arrow-bottom{
+        font-size: 40px;
+        text-decoration: none;
+        color:#026cce;
+        position: relative;
+        margin-left:-300px;
+        max-width:100%;
+    }
+
+    #arrow-bottom:hover{
+        color: black;
+        top: 4px;
+    }
+/* Home End */
+
+/* About and services */
+    #about-content{
+        padding-top: 10%;
+        padding-bottom: 8%;
+        background-image: url(../images/drawing.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .about-text{
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 20px;
+        text-shadow: 0px 0px 1px black;
+        box-shadow:0px 0px 5px white; 
+    }
+
+    h1#about-us-headers{
+        padding: 10px 25px;
+        font-family: 'poppins', sans-serif;
+        font-size: 3rem;
+        text-shadow: none;
+    }
+/* About End */
+
+/* Services */
+    .services-content{
+        padding-top: 8%;
+        padding-bottom: 5.5%;
+    }
+
+    /* Courusel */
+        .carousel-backdrop{
+            border-radius: 10px;
+            background: rgba(0,0,0,0.8); 
+            padding: 20px;
+        }
+
+        .carousel-control-next, .carousel-control-prev {
+            font-size: 50px;
+            color: white;
+            filter: drop-shadow(2px 2px 2px black); 
+        }
+
+        .midway-change{
+            color: white;
+        }
+    /* Courusel End*/
+/* Services End */
+
+/* Contact Us */
+    #contact-container{
+        background-image: url(../images/child-mail.jpeg);
+        /* background: linear-gradient(167deg, rgba(255, 245, 200), rgba(50, 170, 180)); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: inset 0 0 0 2000px rgba(80,80,80,0.7);  
+        margin-top: 110px;
+        color: white;
+    }
+
+    .contact-content{
+        padding-top: 10%;
+        padding-bottom: 5%;
+        filter: drop-shadow(1px 1px 2px rgba(0,0,0,1));  
+    }
+
+    
+    .contact-header{
+        font-size: 50px;
+        font-family: 'poppins', serif;
+    }
+
+    .sub-headers{
+        font-family: 'poppins', serif;
+        font-size: 20px;
+    }
+
+    .days{
+        display: inline;
+        font-size: 16px;
+    }
+
+    #name-field, #email-field, #text-box{
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 0px solid ;
+        background: #eee;
+        border-radius: 5px 5px 5px 5px;
+        font-family: 'poppins';
+    }
+    
+    #name-field:focus, #email-field:focus, #text-box:focus{
+        border: 1px #026cce;
+    }
+
+    .input-box, .submit-button-box{
+        padding: 5px;
+    }
+
+    button{
+        padding: 15px 50px;
+        border: none;
+        background: #026cce;
+        border-radius: 5px;
+        font-family: 'poppins';
+        font-size: 18px;
+        color: white;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    button:after {
+        content: '»';
+        position: absolute;
+        opacity: 0;  
+        top: 14px;
+        right: -20px;
+        transition: 0.5s;
+    }
+      
+    button:hover{
+        padding-right: 30px;
+        padding-left:20px;
+    }
+      
+    button:hover:after {
+        opacity: 1;
+        right: 10px;
+    }
+    
+/* Resposive Design */
+    @media (max-width: 1200px) {
+        nav#header ul li a.nav-links{
+            padding: 10px;
+        } 
+
+        nav#header{
+            padding-bottom: 30px;
+        }
+
+        ul li a#home-current{
+            background: url('../images/underline-red.png') bottom center no-repeat;
+            background-size: 90% 20px;
+        }
+
+        ul li a#services-current{
+            background: url('../images/underline-blue.png') bottom center no-repeat;
+            background-size: 90% 20px;
+            margin-left: 0;
+        }
+
+        ul li a#about-us-current{
+            background: url('../images/underline-orange.png') bottom center no-repeat;
+            background-size: 90% 20px;
+            margin-left: 0;
+        }
+
+        ul li a#contact-current{
+            background: url('../images/underline-green.png') bottom center no-repeat;
+            background-size: 90% 20px;
+            margin-left: 0;
+        }
+
+        .push-right{
+            margin: 0;
+            margin-left: auto;
+        }
+
+        .services-content{
+            margin-top: 12%;
+            padding-bottom: 5.5%;
+        }
+    }
+
+    @media (max-width: 800px) {
+        .text-align-center{
+            text-align: center;
+        }
+
+        #logo-navbar{
+            display: none;
+        }
+    }
+
+    @media (max-width: 640px) {
+        nav#header ul li a.nav-links{
+            padding-left: 5px;
+        } 
+
+        nav#header ul{
+            margin-right: 9px;
+        }
+
+        nav#header{
+            padding-bottom: 0;
+        }
+
+        #name{
+            padding-top: 40px;
+        }
+    }
