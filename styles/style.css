@@ -444,6 +444,10 @@ body{
         .fb{
             pointer-events: none;
         }
+
+        #careers-container{ 
+            margin-top: 110px;
+        }
     }
 
     @media (max-width: 800px) {
@@ -550,6 +554,10 @@ body{
     
         ul li a#contact-current{
             background: none;
+        }
+
+        #careers-container{ 
+            margin-top: 20px;
         }
     }
 
