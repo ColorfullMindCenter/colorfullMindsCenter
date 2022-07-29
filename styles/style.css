@@ -96,12 +96,18 @@ body{
             background-size: 30px 30px;
             margin-left: 20px;
         }
+
+        ul li a#careers-current{
+            background: url('../images/hand-pale-blue.png') left no-repeat;
+            background-size: 30px 30px;
+            margin-left: 20px;
+        }
     /* Navbar Current Page End*/
 
 
     /* Navbar Hover */
-        ul li a#home-link:hover,#home-current:hover,#about-us:hover,#services:hover,#contact:hover,
-        #home-current:hover,a#about-us-current:hover,a#contact-current:hover,a#services-current:hover
+        ul li a#home-link:hover,#home-current:hover,#about-us:hover,#services:hover,#contact:hover,#careers:hover,
+        #home-current:hover,a#about-us-current:hover,a#contact-current:hover,a#services-current:hover,a#careers-current:hover
         {
             text-decoration: none; 
             cursor: pointer; 
@@ -130,6 +136,12 @@ body{
         ul li a#services:hover
         {
             background: url('../images/underline-blue.png') bottom center no-repeat;
+            background-size: 70% 20px;
+        }
+
+        ul li a#careers:hover
+        {
+            background: url('../images/underline-pale-blue.png') bottom center no-repeat;
             background-size: 70% 20px;
         }
     /* Navbar Hover End */
@@ -421,9 +433,10 @@ body{
             margin-left: 0;
         }
 
-        .push-right{
-            margin: 0;
-            margin-left: auto;
+        ul li a#careers-current{
+            background: url('../images/underline-green.png') bottom center no-repeat;
+            background-size: 90% 20px;
+            margin-left: 0;
         }
 
         .services-content{
@@ -443,6 +456,7 @@ body{
 
         .fb{
             pointer-events: none;
+            display: none;
         }
 
         #careers-container{ 
@@ -466,58 +480,27 @@ body{
         .separation-bar-careers{
             display: block;
         }
-    }
-
-    @media (max-width: 640px) {
-        nav#header ul li a.nav-links{
-            padding-left: 5px;
-            padding-right: 5px;
-        } 
-
-        nav#header ul li a.nav-links#home-link, nav#header ul li a.nav-links#home-current {
-            padding-left: 0;
-            padding-right: 0;
-            margin-right: 10px;
-        } 
-
-        nav#header ul{
-            margin-right: 9px;
-            flex: auto;
-        }
-
-        nav#header{
-            padding-bottom: 0;
-        }
-
-        #name{
-            padding-top: 0;
-            font-size: 65px;
-        }
-
-        body{
-            padding-top: 65px; 
-        }
 
         .push-right{
             display: none;
         }
-    
+
         #header a.icon {
             right: 15%;
             position: absolute;
             display: block;
         }
         
-        #header.responsive ul li #logo-navbar {
-            display: none;
-        }
-    
         #header.responsive .icon {
             top: 10%;
             color: #AF2026;
             transition: 1s;
         }
-    
+
+        #header.responsive ul li #logo-navbar {
+            display: none;
+        }
+        
         #header.responsive ul.push-right{
             float: left;
             display: block;
@@ -556,6 +539,43 @@ body{
             background: none;
         }
 
+        ul li a#careers-current{
+            background: none;
+        }
+    
+    }
+
+    @media (max-width: 640px) {
+        nav#header ul li a.nav-links{
+            padding-left: 5px;
+            padding-right: 5px;
+        } 
+
+        nav#header ul li a.nav-links#home-link, nav#header ul li a.nav-links#home-current {
+            padding-left: 0;
+            padding-right: 0;
+            margin-right: 10px;
+        } 
+
+        nav#header ul{
+            margin-right: 9px;
+            flex: auto;
+        }
+
+        nav#header{
+            padding-bottom: 0;
+        }
+
+        #name{
+            padding-top: 0;
+            font-size: 65px;
+        }
+
+        body{
+            padding-top: 65px; 
+        }
+    
+        
         #careers-container{ 
             margin-top: 20px;
         }
